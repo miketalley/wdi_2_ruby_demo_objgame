@@ -1,5 +1,6 @@
 require 'pry'
 require_relative '../lib/knight'
+require_relative '../lib/wizard'
 
 puts "Weeeeelcome to the G-g-game"
 
@@ -18,3 +19,13 @@ puts "#{tom_b.full_name}'s strength is #{tom_b.strength}"
 # Joe's attacks Tom B.
 joe.attack(tom_b)
 puts "#{tom_b.full_name}'s health is #{tom_b.health}"
+
+
+merlin= Wizard.new("Merlin", "Freakso", "Female")
+puts "Created the #{merlin.class.name }, #{merlin.full_name}"
+puts "#{merlin.full_name}'s health is #{merlin.health}"
+puts "#{merlin.full_name}'s strength is #{merlin.strength}"
+
+# Joe's attacks Merlin
+joe.attack(merlin)
+puts "#{merlin.full_name}'s health is #{merlin.health}"
