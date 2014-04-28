@@ -19,25 +19,25 @@ puts "Total Players: #{GAGame::Player.total_players}"
 
 # BATTLE
 
-# while wizard.alive?
-#   puts "Knight: #{knight.health} Health"
-#   puts "Wizard: #{wizard.health} Health"
-#   puts "Knight attacks Wizard"
-#   knight.attack(wizard)
-#   puts "Knight: #{knight.health} Health"
-#   puts "Wizard: #{wizard.health} Health"
-#   puts "Wizard attacks Knight"
-#   wizard.attack(knight)
-#   puts "Knight: #{knight.health} Health"
-#   puts "Wizard: #{wizard.health} Health"
-#   puts "#{knight.full_name} is " + (knight.alive? ? "Alive" : "Dead")
-#   knight.fairy
-#   puts "Knight: #{knight.health} Health"
-#   puts "Wizard: #{wizard.health} Health"
-#   puts "Knight attacks Wizard"
-#   knight.attack(wizard)
-#   puts "Knight: #{knight.health} Health"
-#   puts "Wizard: #{wizard.health} Health"
-#   puts "Wizard is " + (wizard.alive? ? "Alive" : "Dead")
-#   talk("#{knight.full_name} leveled up! He is now level 2 and has one available skill point!")
-# end
+while wizard.alive?
+  puts "Knight: #{knight.health} Health"
+  puts "Wizard: #{wizard.health} Health"
+  puts "Knight attacks Wizard"
+  knight.attack(wizard)
+  puts "Knight: #{knight.health} Health"
+  puts "Wizard: #{wizard.health} Health"
+  puts "Wizard attacks Knight"
+  wizard.attack(knight)
+  puts "Knight: #{knight.health} Health"
+  puts "Wizard: #{wizard.health} Health"
+  puts "#{knight.full_name} is " + (knight.alive? ? "Alive" : "Dead")
+  knight.fairy
+  puts "Knight: #{knight.health} Health"
+  puts "Wizard: #{wizard.health} Health"
+  puts "Knight attacks Wizard"
+  knight.attack(wizard)
+  puts "Knight: #{knight.health} Health"
+  puts "Wizard: #{wizard.health} Health"
+  puts "Wizard is " + (wizard.alive? ? "Alive" : "Dead")
+  talk("#{knight.full_name} leveled up! He is now level 2 and has one available skill point!")
+end
