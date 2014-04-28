@@ -27,5 +27,9 @@ puts "#{merlin.full_name}'s health is #{merlin.health}"
 puts "#{merlin.full_name}'s strength is #{merlin.strength}"
 
 # Joe's attacks Merlin
-joe.attack(merlin)
-puts "#{merlin.full_name}'s health is #{merlin.health}"
+4.times do
+  puts "Joe attacks merlin"
+  joe.attack(merlin)
+  puts "#{merlin.full_name}'s health is #{merlin.health}"
+  puts "#{merlin.first_name}'s is alive? #{merlin.alive}"
+end
