@@ -6,7 +6,6 @@ class Player < Person
     DEFAULT_STRENGTH = 5
 
     attr_reader :health, :strength, :alive
-    # attr_accessor :health, :strength, :alive
 
     def initialize(first_name, last_name)
       super(first_name, last_name)
@@ -20,6 +19,10 @@ class Player < Person
 
     def take_damage(attack_strength)
       @health -= attack_strength
+    end
+
+    def attack(opponent)
+      opponent.take_damage(strength)
     end
 
 end
