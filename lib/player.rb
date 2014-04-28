@@ -28,7 +28,7 @@ class Player < Person
   end
 
   def attack(player)
-#    report("#{full_name} is at")
+    report("#{full_name} is attacking #{player.full_name}")
     player.take_damage(strength)
   end
 

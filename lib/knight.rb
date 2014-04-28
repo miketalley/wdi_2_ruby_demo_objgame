@@ -1,7 +1,11 @@
 require_relative 'player'
+require_relative 'horse_rider'
 
 
 class Knight  < Player
+
+  # Mixin HorseRider module
+  include HorseRider
 
   DEFAULT_HEALTH = 50
   DEFAULT_STRENGTH = 7
