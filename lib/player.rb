@@ -4,6 +4,11 @@ require_relative "talker"
 module GAGame
 
   class Player < Person
+      @@total_players = 0
+
+      def self.total_players
+        @@total_players
+      end
 
       # Mixin the Talker module
       include Talker
@@ -18,6 +23,7 @@ module GAGame
         @health = DEFAULT_HEALTH
         @strength = DEFAULT_STRENGTH
         talk("Created Player #{full_name}.")
+        @@total_players += 1
       end
 
       def alive?
