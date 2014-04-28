@@ -5,7 +5,7 @@ class Player < Person
     DEFAULT_HEALTH = 20
     DEFAULT_STRENGTH = 5
 
-    attr_reader :health, :strength, :alive
+    attr_reader :health, :strength
 
     def initialize(first_name, last_name)
       super(first_name, last_name)
@@ -22,7 +22,11 @@ class Player < Person
     end
 
     def attack(opponent)
-      opponent.take_damage(strength)
+      if alive?
+        opponent.take_damage(strength)
+      else
+        puts "#{self.full_name} cannot attack because they are dead."
+      end
     end
 
 end

@@ -13,4 +13,14 @@ class Knight < Player
     @strength = DEFAULT_STRENGTH
   end
 
+  def chug_potion
+    puts "#{first_name} #{last_name} chugs a health potion!"
+    @health = DEFAULT_HEALTH
+  end
+
+  def fairy
+    puts "#{first_name} #{last_name} has a fairy ressurrect him!"
+    @health = DEFAULT_HEALTH
+  end
+
 end
